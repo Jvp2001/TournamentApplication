@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.joshuapetersen.tournament.javafx.components.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="-Infinity" prefWidth="-Infinity" stylesheets="@../../../stylesheets/tournament/template/TournamentTemplate.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshuapetersen.tournament.template.TournamentTemplate">
+    <children>
+        <BorderPane fx:id="root" prefHeight="400.0"VBox.vgrow="ALWAYS" prefWidth="600.0">
+            <top>
+                <Label fx:id="tournamentTitle" prefHeight="101.0" prefWidth="689.0" styleClass="Title" text="Label" BorderPane.alignment="CENTER" />
+            </top>
+         <center>
+             <TournamentTable fx:id="tournamentTable" tournamentName="Backgammon"></TournamentTable>
+         </center>
+        </BorderPane>
+    </children>
+</VBox>
